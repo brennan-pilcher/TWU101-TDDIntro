@@ -7,8 +7,12 @@ public class Account {
         balance = startingBalance;
     }
 
-    public void deposit(int value) {
+    public void deposit (int value) {
         balance += value;
+    }
+
+    public void withdraw (int value) {
+        balance -= value;
     }
 
     public int balance() {
