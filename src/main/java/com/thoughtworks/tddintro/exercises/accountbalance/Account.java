@@ -12,7 +12,9 @@ public class Account {
     }
 
     public void withdraw (int value) {
-        balance -= value;
+        if (balance - value >= 0) {
+            balance -= value;
+        }
     }
 
     public int balance() {
