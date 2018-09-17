@@ -43,10 +43,11 @@ public class LibraryTest {
     }
 
     @Test
-    @Ignore // Remove each @Ignore and implement test
+    //@Ignore // Remove each @Ignore and implement test
     public void shouldPrintNothingWhenThereAreNoBooks() {
+        library.listBooks();
 
-        // implement me
+        verify(printStream).println("");
     }
 
     @Test
